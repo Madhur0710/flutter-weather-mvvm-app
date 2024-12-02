@@ -4,10 +4,10 @@ import 'view/weather_view.dart';
 import 'package:provider/provider.dart';
 import 'viewmodel/weather_viewmodel.dart';
 
-void main() async {
+Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-   dotenv.load();
+   await dotenv.load();
 
   runApp(
     MultiProvider(
